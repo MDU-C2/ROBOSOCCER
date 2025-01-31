@@ -1,0 +1,35 @@
+/* rasp_communicator.h
+ *==============================================================================
+ * Author: Aaiza A. Khan and Shruthi P. Kunnon
+ * Creation date: 2024-11-11
+ * Last modified: 2024-11-11 by Aaiza A. Khan
+ * Description: Communicator between STM32 and Raspberry pi.
+ * License: See LICENSE file for license details.
+ *==============================================================================
+ */
+// uart_communicator.h
+#ifndef UART_COMMUNICATOR_H
+#define UART_COMMUNICATOR_H
+
+#include "stm32h7xx_hal.h"
+#include <cstdint>
+
+namespace stm32_code {
+namespace communicator {
+
+class UartCommunicator {
+public:
+    UartCommunicator(UART_HandleTypeDef* huart5);
+    void Transmit(uint8_t* data, size_t size);
+    void Receive(uint8_t* buffer, size_t size);
+    void UartRxCallback();
+
+private:
+    UART_HandleTypeDef* huart5_;
+    uint8_t rx_buff[10]; // Buffer for receiving data
+};
+
+} // namespace communicator
+} // namespace stm32_code
+
+#endif // UART_COMMUNICATOR_H

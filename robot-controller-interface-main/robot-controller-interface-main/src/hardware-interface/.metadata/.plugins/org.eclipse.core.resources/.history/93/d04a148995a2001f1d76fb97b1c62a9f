@@ -1,0 +1,66 @@
+/* main_cpp.cc
+ *==============================================================================
+ * Author: Emil Åberg
+ * Creation date: 2024-11-11
+ * Last modified: 2024-11-11 by Emil Åberg
+ * Description: Function that is called within main.c and serves as the main
+ * entry point of the  user defined c++ code.
+ * License: See LICENSE file for license details.
+ *==============================================================================
+ */
+
+/* Related .h files */
+#include "main_cpp.h"
+
+/* Project .h files */
+#include "sensor-drivers/nine_axis_imu.h"
+#include "../stm32h7xx_hal.h"
+#include "raspberrypi-communicator/rasp_communicator.h"
+#include <cstring>
+
+extern "C"
+{
+
+/* This function serves as the main entry point for the user defined c++ code.
+ * All necessary peripheral handles should be added as arguments. */
+void MainCpp(I2C_HandleTypeDef hi2c1,
+			 I2C_HandleTypeDef hi2c2,
+			 I2C_HandleTypeDef hi2c4,
+			 I2C_HandleTypeDef hi2c5,
+			 UART_HandleTypeDef huart3,
+			 UART_HandleTypeDef huart5)
+{
+  /* Example program to read sensor data via i2c and print it from the PC */
+  stm32_code::sensor_drivers::NineAxisIMU imu;
+  stm32_code::sensor_drivers::NineAxisIMUData data;
+
+  uint8_t rxBuffer[128]; // Define buffer
+  char formattedBuffer[128]; // Define buffer for formatted data
+
+  while(1)
+  {
+	data = imu.ReadData(&hi2c2);
+	imu.PrintData(&huart3, data);
+
+	printf("UART initialized\n");
+	HAL_UART_Transmit(&huart3, (uint8_t*)"Debug Message", 13, HAL_MAX_DELAY);
+
+	// Transmit message to Raspberry Pi using rasp_communicator
+	stm32_code::raspberrypi_communicator::TransmitToRaspberryPi(huart5);
+	stm32_code::raspberrypi_communicator::ReceiveFromRaspberryPi(huart5, rxBuffer, sizeof(rxBuffer));
+	// Format received data into formattedBuffer
+	//sprintf(formattedBuffer, "Received: %s\r\n", rxBuffer);
+	printf("UART initialized\n");
+	HAL_UART_Transmit(&huart3, (uint8_t*)"Debug Message", 13, HAL_MAX_DELAY);
+
+	// Transmit the formatted data to UART3
+	HAL_UART_Transmit(&huart3, (uint8_t*)formattedBuffer, strlen(formattedBuffer), HAL_MAX_DELAY);
+
+	printf("UART initialized\n");
+	HAL_UART_Transmit(&huart3, (uint8_t*)"Debug Message", 13, HAL_MAX_DELAY);
+
+	HAL_Delay(1000);  // Optional delay of 1 second
+  }
+}
+
+}

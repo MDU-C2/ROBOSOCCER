@@ -1,0 +1,50 @@
+/* rasp_communicator.cc
+ *==============================================================================
+ * Author: Aaiza A. Khan and Shruthi P. Kunnon
+ * Creation date: 2024-11-11
+ * Last modified: 2024-11-11 by Aaiza A. Khan
+ * Description: Communicator between STM32 and Raspberry pi.
+ * License: See LICENSE file for license details.
+ *==============================================================================
+ */
+
+/* Related .h files */
+#include "rasp_communicator.h"
+
+/* C++ standard library headers */
+#include <string.h>
+#include <stdio.h>
+
+/* Project .h files */
+#include "../stm32h7xx_hal.h"
+
+namespace stm32_code
+{
+namespace raspberrypi_communicator
+{
+RaspCommunicator::RaspCommunicator(UART_HandleTypeDef* huart5) : huart5_(huart5) {
+    // No need to initialize tx_buff here, it's already declared in the header
+    tx_buff[0] = 65; tx_buff[1] = 66; tx_buff[2] = 67; tx_buff[3] = 68;
+    tx_buff[4] = 69; tx_buff[5] = 70; tx_buff[6] = 71; tx_buff[7] = 72;
+    tx_buff[8] = 73; tx_buff[9] = 74;
+}
+
+void RaspCommunicator::TransmitData() {
+    HAL_UART_Transmit_DMA(huart5_, tx_buff, sizeof(tx_buff));  // Using DMA for transmission
+}
+
+void RaspCommunicator::ReceiveData() {
+    HAL_UART_Receive_DMA(huart5_, rx_buff, sizeof(rx_buff));  // Using DMA for reception
+}
+
+void RaspCommunicator::UartRxCallback(UART_HandleTypeDef *huart) {
+	if (huart->Instance == UART5)
+	{
+    // Callback function for UART reception completion
+    HAL_UART_Receive_DMA(huart5_, rx_buff, sizeof(rx_buff));  // Re-initiate DMA reception
+	}
+}
+
+} /* namespace raspberrypi_communicator */
+} /* namespace stm32_code */
+

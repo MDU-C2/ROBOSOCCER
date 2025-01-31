@@ -1,0 +1,102 @@
+/* main_cpp.cc
+ *==============================================================================
+ * Author: Emil Åberg
+ * Creation date: 2024-11-11
+ * Last modified: 2024-11-11 by Emil Åberg
+ * Description: Function that is called within main.c and serves as the main
+ * entry point of the  user defined c++ code.
+ * License: See LICENSE file for license details.
+ *==============================================================================
+ */
+
+
+/* Related .h files */
+#include "main_cpp.h"
+
+/* Project .h files */
+<<<<<<< Updated upstream
+#include "sensor-interface/six_axis_imu.h"
+#include "sensor-interface/nine_axis_imu.h"
+#include "sensor-interface/proximity_sensor_120cm.h"
+=======
+#include "sensor-drivers/nine_axis_imu.h"
+#include "raspberrypi-communicator/rasp_communicator.h"
+>>>>>>> Stashed changes
+#include "../stm32h7xx_hal.h"
+#include <cstring>
+
+// Declare global UART handlers
+extern UART_HandleTypeDef huart3;
+extern UART_HandleTypeDef huart5;
+
+// Declare global buffers
+uint8_t tx_buff[] = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74}; // ABCDEFGHIJ in ASCII code
+uint8_t rx_buff[10]; // Buffer to store received data
+
+/* Declare all necessary peripheral handles as extern */
+extern I2C_HandleTypeDef hi2c1;
+extern I2C_HandleTypeDef hi2c2;
+extern I2C_HandleTypeDef hi2c4;
+extern I2C_HandleTypeDef hi2c5;
+extern UART_HandleTypeDef huart3;
+extern UART_HandleTypeDef huart5;
+
+extern "C"
+{
+    /* This function serves as the main entry point for the user-defined C++ code.
+     * All necessary peripheral handles should be added as arguments. */
+    void MainCpp(I2C_HandleTypeDef hi2c1,
+                 I2C_HandleTypeDef hi2c2,
+                 I2C_HandleTypeDef hi2c4,
+                 I2C_HandleTypeDef hi2c5,
+                 UART_HandleTypeDef huart3_param,
+                 UART_HandleTypeDef huart5_param)
+    {
+        // Assign global UART handlers
+        huart3 = huart3_param;
+        huart5 = huart5_param;
+
+/* This function serves as the main entry point for the user defined c++ code */
+void MainCpp()
+{
+  /* Example program to read sensor data via i2c and print it from the PC */
+  uint8_t buffer[128];
+
+  HAL_Delay(500);
+  imu.Init(&hi2c1);
+
+        stm32_code::sensor_drivers::NineAxisIMU imu;
+        stm32_code::sensor_drivers::NineAxisIMUData data;
+
+        while (1)
+        {
+            // Read and print IMU data to Minicom (via huart3)
+            data = imu.ReadData(&hi2c2);
+            imu.PrintData(&huart3, data);
+
+            // Transmit predefined buffer via UART5
+            HAL_UART_Transmit_DMA(&huart5, tx_buff, 10);
+
+            // Delay for readability
+            HAL_Delay(1000);
+
+            // Receive data via UART5
+            HAL_UART_Receive_DMA(&huart5, rx_buff, 10);
+
+            // Transmit received data to Minicom via huart3
+            HAL_UART_Transmit(&huart3, rx_buff, sizeof(rx_buff), HAL_MAX_DELAY);
+
+            HAL_Delay(1000);
+        }
+    }
+
+    // Interrupt callback for UART receive complete
+    void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+    {
+        if (huart->Instance == UART5) // Check if the callback is for UART5
+        {
+            // Re-enable UART receive interrupt for continuous reception
+            HAL_UART_Receive_DMA(&huart5, rx_buff, 10);
+        }
+    }
+}

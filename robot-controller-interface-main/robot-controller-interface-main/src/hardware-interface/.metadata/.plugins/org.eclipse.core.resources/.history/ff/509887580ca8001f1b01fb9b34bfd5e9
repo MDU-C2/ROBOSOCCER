@@ -1,0 +1,51 @@
+/* rasp_communicator.cc
+ *==============================================================================
+ * Author: Aaiza A. Khan and Shruthi P. Kunnon
+ * Creation date: 2024-11-11
+ * Last modified: 2024-11-11 by Aaiza A. Khan
+ * Description: Communicator between STM32 and Raspberry pi.
+ * License: See LICENSE file for license details.
+ *==============================================================================
+ */
+
+/* Related .h files */
+#include "rasp_communicator.h"
+#include "../stm32h7xx_hal.h"
+
+/* C++ standard library headers */
+#include <string.h>
+#include <stdio.h>
+
+namespace stm32_code
+{
+namespace raspberrypi_communicator
+{
+static RaspCommunicator* instance = nullptr;
+
+RaspCommunicator::RaspCommunicator(UART_HandleTypeDef* huart5) : huart5_(huart5) {
+    instance = this;
+}
+
+void RaspCommunicator::TransmitData() {
+    HAL_UART_Transmit_DMA(huart5_, tx_buff, sizeof(tx_buff));  // Using DMA for transmission
+}
+
+void RaspCommunicator::TransmitData(UART_HandleTypeDef* huart) {
+	HAL_UART_Transmit(huart, rx_buff, sizeof(rx_buff), HAL_MAX_DELAY);  // Using DMA for transmission
+}
+
+void RaspCommunicator::ReceiveData() {
+    HAL_UART_Receive_DMA(huart5_, rx_buff, sizeof(rx_buff));  // Using DMA for reception
+
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart) {
+    if (huart->Instance == UART5) {  // Check if callback is for UART5
+        if (instance != nullptr) {
+            instance->HAL_UART_RxCpltCallback(huart);  // Call the non-static member function
+        }
+    }
+}
+} /* namespace raspberrypi_communicator */
+} /* namespace stm32_code */
+
