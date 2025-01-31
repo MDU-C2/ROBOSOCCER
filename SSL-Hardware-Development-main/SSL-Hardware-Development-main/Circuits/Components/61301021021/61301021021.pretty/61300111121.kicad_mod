@@ -1,0 +1,226 @@
+(footprint "61300111121"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Pin Header, pitch 2.54 mm, THT, Vertical, single row, 1p")
+	(property "Reference" "REF**"
+		(at 0 -2.145 0)
+		(layer "F.SilkS")
+		(uuid "7d323cb1-0733-4f0f-8e8b-b9eff6d0f4b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "61300111121"
+		(at 0 2.145 0)
+		(layer "F.Fab")
+		(uuid "07c6659b-65e7-4639-82da-ecaa70c6d79f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5730a658-8817-44c0-8acd-2d4e1a9b64ed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b87722d7-4a8e-4b98-a462-323c1d2e0e2d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "178c6f41-adea-41d4-88c4-bcdc0d980c4d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -1.42 -1.345)
+		(end 1.42 -1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aba18a87-e02f-48d8-a163-ef93c2073061")
+	)
+	(fp_line
+		(start -1.42 1.345)
+		(end -1.42 -1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c0735633-29d7-4f96-866a-d75c26e98275")
+	)
+	(fp_line
+		(start -1.42 1.345)
+		(end 1.42 1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ccd32690-00ad-4173-96e0-f6d7f92981fa")
+	)
+	(fp_line
+		(start 1.42 1.345)
+		(end 1.42 -1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "da425ee1-795c-4ceb-a0a9-04e3759946da")
+	)
+	(fp_line
+		(start -1.62 -1.545)
+		(end 1.62 -1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "f8311527-f37b-4a06-b4ca-8418342aa309")
+	)
+	(fp_line
+		(start -1.62 1.545)
+		(end -1.62 -1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "2e2ad114-04e2-427c-bba1-5953fa322d1b")
+	)
+	(fp_line
+		(start -1.62 1.545)
+		(end 1.62 1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "3bfaad44-78d9-406d-8cd1-7855cb41aa0a")
+	)
+	(fp_line
+		(start -1.27 -1.27)
+		(end 1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "5a917a4d-186f-4f1a-9311-bbc94116b718")
+	)
+	(fp_line
+		(start -1.27 1.27)
+		(end -1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "3cd9a2fa-69af-4e7b-90df-1088d2bbfef8")
+	)
+	(fp_line
+		(start -1.27 1.27)
+		(end 1.27 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "8b9dc61a-4207-4620-9a9b-6fefa68420bb")
+	)
+	(fp_line
+		(start -0.5 0)
+		(end 0.5 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "a800c3bc-ceff-4e04-a03c-c01d1dea8e5a")
+	)
+	(fp_line
+		(start 0 0.5)
+		(end 0 -0.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "5df98fb1-b2aa-40ff-a69d-a3291b1383f2")
+	)
+	(fp_line
+		(start 1.27 1.27)
+		(end 1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "89a92635-09bb-4e13-b60d-b6a84f28ff76")
+	)
+	(fp_line
+		(start 1.62 1.545)
+		(end 1.62 -1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "b6ba4d75-c27d-47af-9337-e87315993ea5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.1 -0.13127 0)
+		(unlocked yes)
+		(layer "User.3")
+		(uuid "c8dd1cc0-0f5e-4c06-a24a-b44331c66d17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "30ad5e1d-842c-495f-8c38-629cacad601d")
+	)
+)

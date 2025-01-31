@@ -1,0 +1,218 @@
+(footprint "62000211821"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "WR-PHD 2.00mm Socket Header, 2 Pins")
+	(property "Reference" "REF**"
+		(at -3 -0.3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9c09f424-9d65-419d-b9ef-f515c00fbcaa")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Value" "62000211821"
+		(at -3 1.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "97745893-ab38-47d5-9f0c-05daeccd1454")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a0a686ec-f310-4709-a4ba-52daf8a3009d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3f849e8-c73f-44fc-b940-11737b2c337f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bc0f009f-65e7-4b9e-b8d6-8fa102e9ee02")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -2.3 -1.35)
+		(end -2.3 1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8173e712-60ff-45bf-b45d-15d919f927f8")
+	)
+	(fp_line
+		(start -2.3 1.35)
+		(end 2.3 1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7d505d32-9e3b-4130-8207-1d18be2431ec")
+	)
+	(fp_line
+		(start 2.3 -1.35)
+		(end -2.3 -1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4ae9ab77-81e2-4c65-8929-9457b65d9ed1")
+	)
+	(fp_line
+		(start 2.3 1.35)
+		(end 2.3 -1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "92d99e9a-6c7a-475b-8fcc-144e44aa2bfe")
+	)
+	(fp_circle
+		(center -1.8 1.8)
+		(end -1.7 1.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "6bf16161-406a-47ec-8dd3-ca0b903e278f")
+	)
+	(fp_poly
+		(pts
+			(xy 2.5635 1.6135) (xy -2.5635 1.6135) (xy -2.5635 -1.6135) (xy 2.5635 -1.6135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.CrtYd")
+		(uuid "d8a139bc-3602-4e2e-a1f5-a82eb342ccfd")
+	)
+	(fp_line
+		(start -2.2 -1.25)
+		(end -2.2 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7e252f91-20eb-41e8-8060-d168b2a05b89")
+	)
+	(fp_line
+		(start -2.2 1.25)
+		(end 2.2 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7f5190e3-f3b6-4f74-ae09-2888df7b04e2")
+	)
+	(fp_line
+		(start 2.2 -1.25)
+		(end -2.2 -1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e5501197-3cac-453e-a53e-5f2f2ee57883")
+	)
+	(fp_line
+		(start 2.2 1.25)
+		(end 2.2 -1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "396bfac0-e004-4a69-8463-c177e83ec72e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -3 -0.3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1c00c03b-802b-459a-ba2a-98e7a62276b7")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(fp_text user "${VALUE}"
+		(at -3 1.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5f99f03f-1665-4cf4-9194-8279d45b2b8e")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -1 0)
+		(size 1.308 1.308)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "73606b91-8cb7-40e5-89b5-a8b81d99d410")
+	)
+	(pad "2" thru_hole circle
+		(at 1 0)
+		(size 1.308 1.308)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "784327bf-07a8-4703-b08c-406120ced899")
+	)
+)

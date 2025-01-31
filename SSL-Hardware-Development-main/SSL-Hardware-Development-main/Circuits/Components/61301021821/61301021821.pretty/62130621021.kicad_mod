@@ -1,0 +1,200 @@
+(footprint "62130621021"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr " WR-PHD 1.27 mm SMT Dual Pin Header, H=3.80 mm, 6Pins")
+	(property "Reference" "REF**"
+		(at -2.635 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "99d94548-51db-4bb5-beb8-3c0e13e57655")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Value" "62130621021"
+		(at -2.635 1.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3c386cb6-d34b-4421-9362-5221bf6a97c8")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4986345-e595-4d7d-9f84-5cecd5d6d76c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68fc827e-02bb-4388-8a1a-0965d3b996f6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "087ae840-e6a5-4350-b057-4cd17e37325a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -2.005 -1.8)
+		(end -2.005 1.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c3d89151-6416-407a-aa7b-090146cc4af2")
+	)
+	(fp_line
+		(start 2.005 1.8)
+		(end 2.005 -1.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff8a7cea-cf73-4c5e-a94f-c711cfdb1052")
+	)
+	(fp_circle
+		(center -2.635 2.8)
+		(end -2.535 2.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "9dcedc60-3109-4607-b9f5-89ffc43c9bf0")
+	)
+	(fp_poly
+		(pts
+			(xy 2.255 3.3) (xy -2.255 3.3) (xy -2.255 -3.3) (xy 2.255 -3.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.CrtYd")
+		(uuid "1f0ad54c-9187-43a5-b3f6-300e499025b8")
+	)
+	(fp_line
+		(start -1.905 -1.7)
+		(end -1.905 1.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f386a540-01de-4c58-9a37-a6b8c773b055")
+	)
+	(fp_line
+		(start -1.905 1.7)
+		(end 1.905 1.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "abdec2b0-662a-457b-8084-4470a3b75223")
+	)
+	(fp_line
+		(start 1.905 -1.7)
+		(end -1.905 -1.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f38667ad-7cbf-4f2f-81bb-c78443441f75")
+	)
+	(fp_line
+		(start 1.905 1.7)
+		(end 1.905 -1.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "169dce7d-d561-4a11-9e0f-d79605140a33")
+	)
+	(pad "1" smd rect
+		(at -1.27 1.85)
+		(size 0.76 2.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "b1f8d6cf-5156-4a9e-989a-c84bf03c3ad7")
+	)
+	(pad "2" smd rect
+		(at -1.27 -1.85)
+		(size 0.76 2.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "2182f95a-88b8-4a0a-ae8d-f0c13b78a743")
+	)
+	(pad "3" smd rect
+		(at 0 1.85)
+		(size 0.76 2.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "f4c92277-c574-4c2d-865a-15206cae4f6d")
+	)
+	(pad "4" smd rect
+		(at 0 -1.85)
+		(size 0.76 2.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "f378f9de-4b0b-4365-891a-e8a880e427af")
+	)
+	(pad "5" smd rect
+		(at 1.27 1.85)
+		(size 0.76 2.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "45080037-4b4c-4a5c-ac7d-173fd9668b2e")
+	)
+	(pad "6" smd rect
+		(at 1.27 -1.85)
+		(size 0.76 2.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "29280b31-285d-4179-a8c6-cedc8e4a13a4")
+	)
+)

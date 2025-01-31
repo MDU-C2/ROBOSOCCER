@@ -1,0 +1,212 @@
+(footprint "61300421121"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "WR-PHD 2.54mm Dual Pin Header, 4 Pins")
+	(property "Reference" "REF**"
+		(at -3.5776 -0.2561 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "0eb849c9-97f3-4632-9342-ab4617c863c5")
+		(effects
+			(font
+				(size 0.747776 0.747776)
+				(thickness 0.065024)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Value" "61300421121"
+		(at -3.4976 1.4442 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9e076dcb-bc00-422c-b603-95857b0391ea")
+		(effects
+			(font
+				(size 0.747776 0.747776)
+				(thickness 0.065024)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68d6ff44-b7d7-4a49-9671-fcc94d1c1921")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "08b55cbb-92dc-4bba-be54-3296c2b67b2a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "45464cd8-33e9-4c2c-b99b-aff8b3ae426b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -2.64 -2.64)
+		(end 2.64 -2.64)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6a30ed78-e060-4f7a-8524-c698f6a8d270")
+	)
+	(fp_line
+		(start -2.64 2.64)
+		(end -2.64 -2.64)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4546719c-2a2b-41b5-b374-1de55eb9b5f5")
+	)
+	(fp_line
+		(start 2.64 -2.64)
+		(end 2.64 2.64)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4be96065-4bd7-4df7-bcc2-cb66f3610535")
+	)
+	(fp_line
+		(start 2.64 2.64)
+		(end -2.64 2.64)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e4537400-a4a6-460a-af5a-eebad8da8c99")
+	)
+	(fp_circle
+		(center -2.2 2.2)
+		(end -2.1 2.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "f22ea1cd-4f0e-4ad4-b368-a5ada7ba05e3")
+	)
+	(fp_poly
+		(pts
+			(xy 2.89 2.89) (xy -2.89 2.89) (xy -2.89 -2.89) (xy 2.89 -2.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.CrtYd")
+		(uuid "602e94d3-c250-44f9-b422-51ee33e7e646")
+	)
+	(fp_line
+		(start -2.54 -2.54)
+		(end 2.54 -2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5e6b301c-5016-4fa7-a962-27f2f0078869")
+	)
+	(fp_line
+		(start -2.54 2.54)
+		(end -2.54 -2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4b363c12-2296-411a-8a88-00d204dc8309")
+	)
+	(fp_line
+		(start 2.54 -2.54)
+		(end 2.54 2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3f629e10-d38e-4c94-9b18-f8011dfbf873")
+	)
+	(fp_line
+		(start 2.54 2.54)
+		(end -2.54 2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "057f2759-c819-47e0-915e-c9bf53a11ad0")
+	)
+	(pad "1" thru_hole circle
+		(at -1.27 1.27 90)
+		(size 1.65 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "1e2a0348-0a3d-4545-9e6f-fe2ed1913dc7")
+	)
+	(pad "2" thru_hole circle
+		(at -1.27 -1.27 270)
+		(size 1.65 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "eb919177-1f19-42f7-af15-6725497909d7")
+	)
+	(pad "3" thru_hole circle
+		(at 1.27 1.27 90)
+		(size 1.65 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "b52c6291-2056-4cc5-ab95-fb2d0d142216")
+	)
+	(pad "4" thru_hole circle
+		(at 1.27 -1.27 270)
+		(size 1.65 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "27ce2d73-63b3-4af6-9a82-b14daad17e55")
+	)
+)

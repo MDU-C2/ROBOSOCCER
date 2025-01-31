@@ -1,0 +1,75 @@
+\documentclass[a4paper,8pt]{article}
+
+% Packages for formatting
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{array}
+\usepackage{lipsum}
+% \usepackage{cite}
+\geometry{margin=0.5in}
+% \usepackage{booktabs}
+% \usepackage{bookmark}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+% \usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{caption}
+
+\newcommand\IEEEhyperrefsetup{
+bookmarks=true,bookmarksnumbered=true,%
+colorlinks=true,linkcolor={black},citecolor={black},urlcolor={black}%
+}
+% Preferred hyperref setup, Michael Shell
+\usepackage[\IEEEhyperrefsetup, pdftex]{hyperref}
+\hypersetup{pdfborder=0 0 0}
+% \usepackage{tocloft}
+
+\begin{document}
+
+\begin{center}
+    \begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{1cm}|p{3cm}| }
+      \caption{Alternative BOM that has equal components to UdeA} \\ \hline 
+      \rowcolor{gray!50} \textbf{Component} & \textbf{Replaces} & \textbf{Purpose} & \textbf{\#} & \textbf{á price (price per robot) SEK}\\ \endhead \hline
+
+      \rowcolor{gray!50} \textbf{Total price for 1 robot} & \textbf{11194.09} \endlastfoot \hline
+
+      MN5208 Navigator Type UAV Multi-Motor KV340 & DF45L024048-A & BLDC motor & 4 & 1027.32 (4109.28)\\ \hline
+      Hobbywing FPV XRotor 3110 900KV & N/A & High revolutions per minute (RPM) motor used to control the dribbler. & 1 & 175.20 (175.20) \\ \hline 
+      B-G431B-ESC1 & N/A & Motor driver with embedded $\mu\text{Controller}$ current sensing and hall sensing to form a closed-loop control algorithm & 5 & 208.96 (1044.8)\\ \hline 
+      ESP32-S3-DevKitC-1-N32R8V & NUCLEO-H723ZG & Chosen by UdeA & 1 & 181.82 (181.82) \\ \hline 
+      TOF400C-VL53L1 & N/A & Chosen by UdeA for obstacle detection & 2 & 176.32 (176.32) \\ \hline
+      VL6180 TOF & N/A & Chosen by UdeA for obstacle detection & 1 & 39.62 (39.62) \\ \hline
+      GY-9960-3.3 APDS-9960 & N/A & Chosen by UdeA for ball detection & 1 & 44.80 (44.80) \\ \hline
+      Raspberry Pi 4 Model B/8GB & N/A & Processing camera input and performing local path planning & 1 & 979 (979) \\ \hline 
+      SX1280IMLTRT & N/A & Used to transmit data over 2.4Ghz network & 1 & 75.44 (75.44) \\ \hline 
+      SKY66122-11 & N/A & Simplified integration with the RF circuit & 1 & 40.48 (40.48) \\ \hline 
+      6s 1300mAh -120C - GNB HV XT60 & N/A & Used to power the robot & 1 & 351.20 (351.20) \\ \hline 
+      LT3750 & N/A & Charge controller for the kicker circuit & 1 & 146.93 (146.93)\\ \hline
+      AS5600-SO\_EK\_AB & iC-PX2604 + PX01S 26-30 & Will be used for odometry of the robot & 4 & 224.40 (897.60) \\ \hline 
+      WSEN-ISDS 6 Axis IMU & N/A & Will be used for odometry of the robot & 10 & N/A\\ \hline 
+      Raspberry Pi Camera-module 3 & N/A & Provide images in front of the robot to detect the ball and obstacles & 1 & 369 (369) \\ \hline 
+      IR Break Beam Sensor - 5mm LEDs & N/A & Used to detect if the ball is close to the robot & 1 & 99 (99) \\ \hline 
+      Connectors & N/A & Supplied by Würth & N/A & N/A \\ \hline 
+      Shaft hub with clamping bracket 4mm & N/A & Couple the wheels with the motor shaft & 4 & 139 (556) \\ \hline 
+      Bearings & N/A & Make the roller spin (dribbler) & 2 & 18 (36)\\ \hline
+      Resistors & N/A & Supplied by Würth or 326 & N/A & N/A \\ \hline 
+      Capacitors & N/A & Supplied by Würth or 326 & N/A & N/A \\ \hline 
+      Voltage regulators & N/A & Supplied by Würth & N/A & N/A \\ \hline 
+      Solenoid & N/A & Supplied by MDU & 1 & N/A \\ \hline 
+      PCB & N/A & The students will supply any custom PCB designed & 2 & N/A\\ \hline 
+      LM74500\break-QDDFRQ1 & N/A & Used to protect against wrong polarity connections & 1 & 16.45 (16.45) \\ \hline 
+      BUK9Y8R5-80EX & N/A & Used with the LM74500\break-QDDFRQ1 & 1 & 17.95 (17.95) \\ \hline 
+      SMBJ58A & N/A & ESD protection diode, used in reverse polarity circuit & 1 & 4.5 (4.5) \\ \hline 
+      SMBJ26A & N/A & ESD protection diode, used in reverse polairiy circuit & 1 & 3.53 (3.53) \\ \hline
+      M3 16mm galvanized steel countersunk screw, 100 pack & N/A & Chassi assembly & 1 & 21.6 (21.6) \\ \hline
+      M3 galvanized steel locking washers, 200 pack & N/A & Chassi assembly & 1 & 69.7 (69.7) \\ \hline
+      M3 steel locking washers, 200 pack & N/A & Chassi assembly & 1 & 83.3 (83.3) \\ \hline
+      M3 stainless steel nut, 100 pack & N/A & Chassi assembly & 1 & 21.85 (21.85) \\ \hline
+      M3 threaded inserts 3mm, 50 pack & N/A & Chassi assembly & 1 & 95 (95) \\ \hline
+      Bearings with flange iglidur® M250 & N/A & Wheel assembly & 100 & 3.34 (334) \\ \hline
+      X-RING 3.63X2.62/NBR70 & N/A & Wheel assembly & 100 & 6.2 (620) \\ \hline
+      Wheel hub 4mm & N/A & Wheel assembly & 4 & 139 (556) \\ \hline
+    \end{longtable}
+  \end{center}
+\end{document}

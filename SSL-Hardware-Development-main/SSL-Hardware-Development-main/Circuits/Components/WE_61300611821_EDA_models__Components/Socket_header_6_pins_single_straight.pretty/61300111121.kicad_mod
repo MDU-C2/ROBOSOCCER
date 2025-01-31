@@ -1,0 +1,226 @@
+(footprint "61300111121"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Pin Header, pitch 2.54 mm, THT, Vertical, single row, 1p")
+	(property "Reference" "REF**"
+		(at 0 -2.145 0)
+		(layer "F.SilkS")
+		(uuid "3a123452-6115-4b92-8c56-b57cce574045")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "61300111121"
+		(at 0 2.145 0)
+		(layer "F.Fab")
+		(uuid "917a9b4e-3b27-4a3a-8958-62315641b6d0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1788cfae-8c76-4be3-a37c-fc0cca55a601")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "35d13bf0-8972-477e-bc0c-391d2572ac1c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4bc9ef73-a139-44e5-9d0d-9f3ae0b5cd36")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -1.42 -1.345)
+		(end 1.42 -1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f97719a6-86fd-4070-808a-5c51570a3474")
+	)
+	(fp_line
+		(start -1.42 1.345)
+		(end -1.42 -1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "de9cec0c-f9d1-4938-96ee-40e163c49af7")
+	)
+	(fp_line
+		(start -1.42 1.345)
+		(end 1.42 1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cceafd0c-99de-44e0-bace-577ea2010b8e")
+	)
+	(fp_line
+		(start 1.42 1.345)
+		(end 1.42 -1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f7e508af-0362-4419-8c83-45ad6f3b9095")
+	)
+	(fp_line
+		(start -1.62 -1.545)
+		(end 1.62 -1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "a1125878-cbc7-4a8a-be1b-fa224d91edb1")
+	)
+	(fp_line
+		(start -1.62 1.545)
+		(end -1.62 -1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "7a125465-a33e-4b24-80b0-381b570c046e")
+	)
+	(fp_line
+		(start -1.62 1.545)
+		(end 1.62 1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "c115ad74-13e5-4b77-b3a5-39c91fa3a015")
+	)
+	(fp_line
+		(start -1.27 -1.27)
+		(end 1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "d30472c5-3794-49a0-a151-53d21ab3c6db")
+	)
+	(fp_line
+		(start -1.27 1.27)
+		(end -1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "6a826008-a8a6-4a7b-885f-b096aaa7d9d6")
+	)
+	(fp_line
+		(start -1.27 1.27)
+		(end 1.27 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "ef0ce777-e7fd-4caa-8dce-56ad2b3ed666")
+	)
+	(fp_line
+		(start -0.5 0)
+		(end 0.5 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "52dec4b2-314c-4e57-9ad1-71e1cfd6498d")
+	)
+	(fp_line
+		(start 0 0.5)
+		(end 0 -0.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "4645e066-d003-489c-b0d1-57b4aad70b20")
+	)
+	(fp_line
+		(start 1.27 1.27)
+		(end 1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "cf5b95d0-b157-4f72-b7ad-77e7a6960392")
+	)
+	(fp_line
+		(start 1.62 1.545)
+		(end 1.62 -1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "1e173123-0489-4d7d-bad0-c4d78a47dff2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.1 -0.13127 0)
+		(unlocked yes)
+		(layer "User.3")
+		(uuid "4ee8d1c3-e556-48cd-9e91-4bc7873ec055")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "01fb2c65-f68c-4977-bf81-e5548983d481")
+	)
+)

@@ -1,0 +1,23 @@
+**/html/*
+**/Debug/**
+**/.metadata/**
+**/.settings/**
+stm32-code Debug.launch
+.mxproject
+
+# Ignore generated code files
+Drivers/CMSIS/*
+Drivers/STM32H7xx_HAL_Driver/*
+Core/Inc/*
+Core/Src/main.c
+Core/Src/freertos.c
+Core/Src/custom_memory_manager.c
+Core/Src/dma_transport.c
+Core/Src/microros_allocators.c
+Core/Src/microros_time.c
+Core/Src/stm32h7xx_hal_msp.c
+Core/Src/stm32h7xx_it.c
+Core/Src/stm32h7xx_hal_timebase_tim.c
+Core/Src/system_stm32h7xx.c
+STM32H723ZGTX_FLASH.ld
+Middlewares/*

@@ -1,0 +1,212 @@
+(footprint "61300421821"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "WR-PHD 2.54 mm Dual Socket Header,4 Pins")
+	(property "Reference" "REF**"
+		(at -3.5776 -0.2561 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "53d48cbc-01bc-400b-9c59-85a0de86f8e7")
+		(effects
+			(font
+				(size 0.747776 0.747776)
+				(thickness 0.065024)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Value" "61300421821"
+		(at -3.4976 1.4442 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ff401e54-0d33-4939-a5fd-55d2f7ca809a")
+		(effects
+			(font
+				(size 0.747776 0.747776)
+				(thickness 0.065024)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a39d3316-0ef4-4f50-8f83-605e2b9f1d5e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a21e415-4c33-4d56-9ed5-b74e06427126")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "384e19a4-e3b1-4bf1-a090-8b661081c21a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -2.89 -2.64)
+		(end 2.89 -2.64)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "70ead0ad-59ca-4996-a5b1-4215b93b8206")
+	)
+	(fp_line
+		(start -2.89 2.64)
+		(end -2.89 -2.64)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "63016bb9-bcdf-49e3-af75-b7c8bf441c1f")
+	)
+	(fp_line
+		(start 2.89 -2.64)
+		(end 2.89 2.64)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f7d405c7-169e-4c33-a3ec-a7a0c5290ddb")
+	)
+	(fp_line
+		(start 2.89 2.64)
+		(end -2.89 2.64)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "de66849a-6809-4563-a7bb-39a1998a5d23")
+	)
+	(fp_circle
+		(center -2.4 2)
+		(end -2.3 2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "f66af0d5-ff36-4d98-a220-1227403dbcd7")
+	)
+	(fp_poly
+		(pts
+			(xy 3.14 2.89) (xy -3.14 2.89) (xy -3.14 -2.89) (xy 3.14 -2.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.CrtYd")
+		(uuid "e1d67320-1e81-4482-9922-89023b29fc54")
+	)
+	(fp_line
+		(start -2.79 -2.54)
+		(end -2.79 2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "823bab84-b697-4d5a-a87c-caf35fb8644a")
+	)
+	(fp_line
+		(start -2.79 2.54)
+		(end 2.79 2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "36decd1c-3e22-4575-b5e7-9da403eba9a5")
+	)
+	(fp_line
+		(start 2.79 -2.54)
+		(end -2.79 -2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "02914a4d-47c8-4c3f-bd0b-8bbf28566acd")
+	)
+	(fp_line
+		(start 2.79 2.54)
+		(end 2.79 -2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1e253481-a712-4e4c-aa91-479e6fa80adf")
+	)
+	(pad "1" thru_hole circle
+		(at -1.27 1.27)
+		(size 1.53 1.53)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "416dd03d-799a-495c-b4c7-386528ab82dd")
+	)
+	(pad "2" thru_hole circle
+		(at -1.27 -1.27)
+		(size 1.53 1.53)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "79644a11-bf20-4ab0-8f07-77b94692a15a")
+	)
+	(pad "3" thru_hole circle
+		(at 1.27 1.27)
+		(size 1.53 1.53)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "ae1b2d9e-6c15-480d-bd68-b8a0e7449bc3")
+	)
+	(pad "4" thru_hole circle
+		(at 1.27 -1.27)
+		(size 1.53 1.53)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "6afc5bc2-106a-48ac-9dee-d40cf154469d")
+	)
+)

@@ -1,0 +1,47 @@
+\documentclass[a4paper,8pt]{article}
+
+% Packages for formatting
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{array}
+\usepackage{lipsum}
+\geometry{margin=0.5in}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{caption}
+
+\newcommand\IEEEhyperrefsetup{
+bookmarks=true,bookmarksnumbered=true,%
+colorlinks=true,linkcolor={blue},citecolor={black},urlcolor={blue}%
+}
+\usepackage[\IEEEhyperrefsetup, pdftex]{hyperref}
+\hypersetup{pdfborder=0 0 0}
+
+\begin{document}
+
+  \begin{center}
+    \begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{1cm}|p{3cm}|p{3cm}|}
+      \caption{Main components}
+      \\ \hline \rowcolor{gray!50} \textbf{Component} & \textbf{Description} & \textbf{Purpose} & \textbf{\#} & \textbf{á price (price per robot) SEK} & \textbf{Price in USD}\\ \endhead \hline
+
+      % \rowcolor{gray!50} \textbf{Total price for 1 robot} & \textbf{10457.69} \endlastfoot \hline
+
+      \href{https://www.nanotec.com/fileadmin/files/Datenblaetter/BLDC/DF45/DF45L024048-A.pdf?1656012533}{DF45L024048-A} & Brushless direct current (BLDC) motor with integrated hall sensors for the wheels & Used to spin the wheels of the robot. & 4 & 830.4 (3273.60) & 74.74 (294.6)\\ \hline 
+      \href{https://www.hobbywing.com/en/products/xrotor3110}{Hobbywing FPV XRotor 3110 900KV} & Brushless DC motor & High revolutions per minute (RPM) motor used to control the dribbler. & 1 & 175.20 (175.20) & 15.77 (15.77) \\ \hline 
+      \href{https://www.mouser.se/datasheet/2/389/b-g431b-esc1-1848063.pdf}{B-G431B-ESC1} & BLDC motor driver & Motor driver with embedded $\mu\text{Controller}$ current sensing and hall sensing to form a closed-loop control algorithm & 5 & 208.96 (1044.8) &  18.8 (94.032)\\ \hline 
+      \href{https://www.st.com/en/evaluation-tools/nucleo-h723zg.html}{NUCLEO-H723ZG} & $\mu\text{Controller}$ & Computational power and real-time processing capabilities, supports $\mu\text{ROS}$ & 1 & 322.58 (322.58) & 29 (29) \\ \hline 
+      \href{https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-datasheet.pdf}{Raspberry Pi 4 Model B/8GB} & Single-board computer & Processing camera input and performing local path planning & 1 & 979 (979) & 88.11 (88.11) \\ \hline
+      \href{https://learn.adafruit.com/adafruit-vl53l4cd-time-of-flight-distance-sensor?view=all}{VL53L4CD ToF} & Lidar & Obstacle detection (Could not find VL53X ToF) & 2 & 176.32 (176.32) & 15.87 (15.87) \\ \hline
+      \href{https://www.electrokit.com/upload/product/41013/41013634/DM00112632.pdf}{VL6180 TOF} & Lidar & Obstacle detection & 1 & 39.62 (39.62) & 3.57 (3.57)\\ \hline
+      \href{https://docs.broadcom.com/doc/AV02-4191EN}{APDS-9960} & RGB Sensor & Ball detection & 1 & 199 (199) & 17.91 (17.91) \\ \hline
+      \href{https://wiki.dfrobot.com/BNO055_Intelligent_9_Axis_Sensor_Module_SKU_SEN0374}{SENS0374} & 9-Dof IMU & Acceleration, Gyroscope, Magnetometer & 1 & 191 (191) & 17.19 (17.19) \\ \hline
+      \href{https://www.elefun.se/p/prod.aspx?v=65193}{6s 1300mAh -120C - GNB HV XT60} & LiPo-battery & Used to power the robot & 1 & 351.20 (351.20) & 31.6 (31.6)\\ \hline 
+      \href{https://www.ichaus.de/product/ic-px-series/#documents}{iC-PX2604 + PX01S 26-30} & Wheel encoders & Will be used for odometry and determining the RPM & 4 & 224.40 (897.60) & 20.2 (80.78) \\ \hline 
+      \href{https://www.we-online.com/components/products/datasheet/2536030320001.pdf}{WSEN-ISDS 6 Axis IMU} & 6-DoF IMU & Will be used for odometry of the robot & 10 & N/A & N/A\\ \hline 
+      \href{https://www.electrokit.com/upload/product/41020/41020240/Camera_Module_3_Product_Brief.pdf}{Raspberry Pi Camera-module 3} & Camera & Provide images in front of the robot to detect the ball and obstacles & 1 & 369 (369) & 33.21 (33.21)\\ \hline 
+    \end{longtable}
+  \end{center}
+
+\end{document}

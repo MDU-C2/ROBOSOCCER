@@ -1,0 +1,132 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "TLP3910_C20-TP_E"
+   (description "Photodiode Output Optocouplers Photovoltaic Coupler; High Voc; SO6L; RoHS")
+   (family "DIO")
+   (package "SOIC127P1000X220-6N")
+   (attribute "Datasheet Link" "https://www.mouser.jp/datasheet/2/408/TLP3910_datasheet_en_20210302-2321212.pdf")
+   (attribute "Geometry.Height" "2.2mm")
+   (attribute "Mouser Part Number" "757-TLP3910C20-TPE")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Toshiba/TLP3910C20-TPE?qs=TuK3vfAjtkUvVtweYOqjVw%3D%3D")
+   (attribute "Manufacturer_Name" "Toshiba")
+   (attribute "Manufacturer_Part_Number" "TLP3910(C20-TP,E")
+   (gate
+    (symbol "TLP3910_C20-TP_E")
+    (pin "ANODE_(INPUT)" 1 PS)
+    (pin "N.C." 2 NC)
+    (pin "CATHODE_(INPUT)" 3 PS)
+    (pin "ANODE_(OUTPUT)" 6 PS)
+    (pin "CATHODE_(OUTPUT)_2" 5 PS)
+    (pin "CATHODE_(OUTPUT)_1" 4 PS)
+   )
+  )
+  (symbol "TLP3910_C20-TP_E"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 2200 100) (pt 2200 -300) (pt 200 -300) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2400 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2400 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2400 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOIC127P1000X220-6N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -5.725 2.27)
+      (pt 5.725 2.27)
+      (pt 5.725 -2.27)
+      (pt -5.725 -2.27)
+      (pt -5.725 2.27))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.75 1.92)
+      (pt 3.75 1.92)
+      (pt 3.75 -1.92)
+      (pt -3.75 -1.92)
+      (pt -3.75 1.92))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.75 0.65)
+      (pt -2.48 1.92))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.475 1.92)
+      (pt 3.475 1.92)
+      (pt 3.475 -1.92)
+      (pt -3.475 -1.92)
+      (pt -3.475 1.92))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -5.475 1.945)
+      (pt -3.825 1.945))))
+   (leg 1 (pt -4.65 1.27) (padstack 0))
+   (leg 2 (pt -4.65 0) (padstack 0))
+   (leg 3 (pt -4.65 -1.27) (padstack 0))
+   (leg 4 (pt 4.65 -1.27) (padstack 0))
+   (leg 5 (pt 4.65 0) (padstack 0))
+   (leg 6 (pt 4.65 1.27) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.65 1.65 0 0 0))
+   )
+   (model "TLP3910_C20-TP,E.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

@@ -1,0 +1,212 @@
+(footprint "61300411121"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "WR-PHD 2.54mm Pin Header, 4 Pin")
+	(property "Reference" "REF**"
+		(at -6.0776 -0.2561 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b7f4b3fc-0081-41f8-a231-16634cbb1576")
+		(effects
+			(font
+				(size 0.747776 0.747776)
+				(thickness 0.065024)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Value" "61300411121"
+		(at -5.9976 1.4442 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1ceb0253-4376-4b49-b2ad-a0090bf00f7c")
+		(effects
+			(font
+				(size 0.747776 0.747776)
+				(thickness 0.065024)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "02fe76be-d112-4616-b23e-56acbf3da483")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c9a456b-ad49-42fe-b782-a29b50fd7300")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d625f9e0-a40d-4e8c-a8a2-c78d87f569ea")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -5.18 -1.37)
+		(end 5.18 -1.37)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4b451bde-f90d-473a-8990-02f48c4b1899")
+	)
+	(fp_line
+		(start -5.18 1.37)
+		(end -5.18 -1.37)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9b52e468-f71e-4cef-a2c2-31f81634e191")
+	)
+	(fp_line
+		(start 5.18 -1.37)
+		(end 5.18 1.37)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "87e6aac0-f552-4b0a-bdb4-75ed853550a3")
+	)
+	(fp_line
+		(start 5.18 1.37)
+		(end -5.18 1.37)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8fe77fa2-bb1d-40f9-9b48-a438d73e50d0")
+	)
+	(fp_circle
+		(center -4.7 0.9)
+		(end -4.6 0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "6acac068-8e47-4b1a-a802-11e076f872c2")
+	)
+	(fp_poly
+		(pts
+			(xy 5.43 1.62) (xy -5.43 1.62) (xy -5.43 -1.62) (xy 5.43 -1.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.CrtYd")
+		(uuid "24d8e40f-ba30-4e74-8d2c-04f0b7e70336")
+	)
+	(fp_line
+		(start -5.08 -1.27)
+		(end -5.08 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "641cdfc5-e733-4678-8e6c-1a41dbdc0185")
+	)
+	(fp_line
+		(start -5.08 1.27)
+		(end 5.08 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7922d280-54fc-4caa-b39e-8effade59769")
+	)
+	(fp_line
+		(start 5.08 -1.27)
+		(end -5.08 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9cb685b4-ab0a-4111-87cd-5cf12572f69e")
+	)
+	(fp_line
+		(start 5.08 1.27)
+		(end 5.08 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d9c157e6-eadd-4b71-9a00-94084f33606a")
+	)
+	(pad "1" thru_hole circle
+		(at -3.81 0)
+		(size 1.65 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "7f9f8f4d-2d56-41cb-a402-48a7f2edc889")
+	)
+	(pad "2" thru_hole circle
+		(at -1.27 0)
+		(size 1.65 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "9d34c353-8bf5-44b0-a897-288f273eaea7")
+	)
+	(pad "3" thru_hole circle
+		(at 1.27 0)
+		(size 1.65 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "c3359c5c-3b47-4c16-b8b6-60369d32e980")
+	)
+	(pad "4" thru_hole circle
+		(at 3.81 0)
+		(size 1.65 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "0b22ef2e-6bb3-4d29-947b-58ecef98a723")
+	)
+)

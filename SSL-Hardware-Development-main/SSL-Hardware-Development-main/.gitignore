@@ -1,0 +1,54 @@
+
+# KiCad files to ignore
+# Backup files
+*~
+*.zip
+*#
+
+# Autosave files
+_autosave-*
+
+# Swap files (temporary working files)
+*.kicad_pcb-bak
+*.sch-bak
+*.bak
+*.lck
+
+# Sym-lib-table and fp-lib-table backup files
+*.lib-tmp
+*.dcm-tmp
+
+# Temporary files generated during use
+*.tmp
+*.vtmp
+*.log
+
+# Simulation files
+*.net
+*.raw
+*.spice
+*.cschem
+
+# Intermediate plot files
+*.ps
+*.eps
+*.drl
+
+# Cache files
+*.kicad
+
+# Latex
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.fls
+*.bbl
+*.blg
+*.toc
+*.out
+
+
+# daff
+# Needed for big files > 100 mb (step files etc)
+.gitattributes

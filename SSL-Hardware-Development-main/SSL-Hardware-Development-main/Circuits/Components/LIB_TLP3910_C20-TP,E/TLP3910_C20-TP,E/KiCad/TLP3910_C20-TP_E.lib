@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model TLP3910_C20-TP,E
+#/14106098/1495773/2.50/6/3/Diode
+DEF TLP3910_C20-TP,E D 0 30 Y Y 1 F N
+F0 "D" 2250 300 50 H V L CNN
+F1 "TLP3910_C20-TP,E" 2250 200 50 H V L CNN
+F2 "SOIC127P1000X220-6N" 2250 100 50 H I L CNN
+F3 "https://www.mouser.jp/datasheet/2/408/TLP3910_datasheet_en_20210302-2321212.pdf" 2250 0 50 H I L CNN
+F4 "Photodiode Output Optocouplers Photovoltaic Coupler; High Voc; SO6L; RoHS" 2250 -100 50 H I L CNN "Description"
+F5 "2.2" 2250 -200 50 H I L CNN "Height"
+F6 "757-TLP3910C20-TPE" 2250 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Toshiba/TLP3910C20-TPE?qs=TuK3vfAjtkUvVtweYOqjVw%3D%3D" 2250 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Toshiba" 2250 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TLP3910(C20-TP,E" 2250 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ANODE_(INPUT) 1 0 0 200 R 50 50 0 0 P
+X N.C. 2 0 -100 200 R 50 50 0 0 N
+X CATHODE_(INPUT) 3 0 -200 200 R 50 50 0 0 P
+X ANODE_(OUTPUT) 6 2400 0 200 L 50 50 0 0 P
+X CATHODE_(OUTPUT)_2 5 2400 -100 200 L 50 50 0 0 P
+X CATHODE_(OUTPUT)_1 4 2400 -200 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 2200 100 2200 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

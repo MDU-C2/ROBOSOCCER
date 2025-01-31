@@ -1,0 +1,226 @@
+(footprint "61300111121"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Pin Header, pitch 2.54 mm, THT, Vertical, single row, 1p")
+	(property "Reference" "REF**"
+		(at 0 -2.145 0)
+		(layer "F.SilkS")
+		(uuid "d61c60ba-4912-4e3e-8281-a5b902c7a83b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "61300111121"
+		(at 0 2.145 0)
+		(layer "F.Fab")
+		(uuid "212fffdf-38c2-483a-98c3-7a816e5b8708")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3cd155ce-9ecd-43b4-8cc7-031a507e01fd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c7a0ccae-2f44-4596-af81-bbace13974db")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bbeff735-d574-488b-a153-3169b4127187")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -1.42 -1.345)
+		(end 1.42 -1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7d1107cd-49df-42d6-9c33-b7ef5b81238c")
+	)
+	(fp_line
+		(start -1.42 1.345)
+		(end -1.42 -1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "de1c1dd2-2db3-417f-8788-1d42b447d968")
+	)
+	(fp_line
+		(start -1.42 1.345)
+		(end 1.42 1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1e7de0b0-ebd6-46c1-a22a-12a075c96d99")
+	)
+	(fp_line
+		(start 1.42 1.345)
+		(end 1.42 -1.345)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "48ab6f53-ce70-4388-ad9f-59b31a09ab3e")
+	)
+	(fp_line
+		(start -1.62 -1.545)
+		(end 1.62 -1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "4ffb7ea0-e057-4cca-a969-b45e9419c8a3")
+	)
+	(fp_line
+		(start -1.62 1.545)
+		(end -1.62 -1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "9de118f8-e9b9-41a5-8d4c-cc5f931287bc")
+	)
+	(fp_line
+		(start -1.62 1.545)
+		(end 1.62 1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "02ff838e-e117-47d9-b844-964d9fc614ae")
+	)
+	(fp_line
+		(start -1.27 -1.27)
+		(end 1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "4365574a-5c28-4aa4-9cbb-fa2d62251253")
+	)
+	(fp_line
+		(start -1.27 1.27)
+		(end -1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "2374da3b-df63-4808-b32a-a41fe6960aa7")
+	)
+	(fp_line
+		(start -1.27 1.27)
+		(end 1.27 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "4d549455-0c0a-4138-9f00-7642331aacf1")
+	)
+	(fp_line
+		(start -0.5 0)
+		(end 0.5 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "73bbb8ad-f518-44c0-a1a2-4f83cd4a7bdc")
+	)
+	(fp_line
+		(start 0 0.5)
+		(end 0 -0.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "c6642fa8-55bd-4cc9-81aa-81485f452d80")
+	)
+	(fp_line
+		(start 1.27 1.27)
+		(end 1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "9597bed9-8667-41b2-b5e8-45ae74f1a236")
+	)
+	(fp_line
+		(start 1.62 1.545)
+		(end 1.62 -1.545)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "76452462-c0a2-4017-926d-cfc06a1d35eb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.1 -0.13127 0)
+		(unlocked yes)
+		(layer "User.3")
+		(uuid "af12045a-990a-49ad-aaa2-4f68816c02e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "581e3eea-5277-4a9e-b43e-d73f9b02b676")
+	)
+)

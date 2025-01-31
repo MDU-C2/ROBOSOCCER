@@ -1,0 +1,10 @@
+syntax = "proto2";
+import "ssl_vision_detection.proto";
+import "ssl_vision_geometry.proto";
+
+/* Definition of Protobuf message from SSL Vision */
+message SslWrapperPacket
+{
+  optional SslDetectionFrame detection = 1;
+  optional SslGeometryData geometry = 2;
+}

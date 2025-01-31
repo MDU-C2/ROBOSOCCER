@@ -1,0 +1,218 @@
+(footprint "61300211821"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "WR-PHD  2.54 mm Socket Header,  2 Pins")
+	(property "Reference" "REF**"
+		(at -3.5 -0.3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "71b23174-2346-48bc-9ef3-acb241a2586e")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Value" "61300211821"
+		(at -3.5 1.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "663acc82-1d43-4f16-99ec-9a87a6ce62dc")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4ca1dfdb-a84b-4e1f-9115-391845b503dd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5c562fa9-0646-477d-9387-9ba6e60f05a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "666b8508-5671-4db8-bf34-d88390703b9e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -2.89 -1.35)
+		(end 2.89 -1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "77453888-f598-4021-a5e1-50ec66d281bc")
+	)
+	(fp_line
+		(start -2.89 1.35)
+		(end -2.89 -1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c5af4c94-2ce4-48f0-a01b-a7fb6304dac1")
+	)
+	(fp_line
+		(start 2.89 -1.35)
+		(end 2.89 1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a1d7c2ad-714c-493a-82b4-1d49506b7f1e")
+	)
+	(fp_line
+		(start 2.89 1.35)
+		(end -2.89 1.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cc7ab1b3-4413-4248-82a8-ed124319258e")
+	)
+	(fp_circle
+		(center -3.3 1.5)
+		(end -3.2 1.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "304f1c87-2ad4-4491-92b4-372336d83661")
+	)
+	(fp_poly
+		(pts
+			(xy 3.14 1.6) (xy -3.14 1.6) (xy -3.14 -1.6) (xy 3.14 -1.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.CrtYd")
+		(uuid "9c3feb14-61de-4eac-b148-2c9a4966b0ea")
+	)
+	(fp_line
+		(start -2.79 -1.25)
+		(end -2.79 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d158aa8e-7816-47bd-a4cd-36e75a9a37fa")
+	)
+	(fp_line
+		(start -2.79 1.25)
+		(end 2.79 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d9e68519-1df6-4547-89b3-2f76027d39ea")
+	)
+	(fp_line
+		(start 2.79 -1.25)
+		(end -2.79 -1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6f38ffe8-8273-4390-be0f-e660a87924dc")
+	)
+	(fp_line
+		(start 2.79 1.25)
+		(end 2.79 -1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "277d832b-a151-4eff-bcbe-ae735805e416")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -3.5 -0.3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a4dcfde4-2c9c-444b-a76a-e4b43fa556e0")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(fp_text user "${VALUE}"
+		(at -3.5 1.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ca26b055-8cca-499e-90dd-665def3c249b")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right bottom)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -1.27 0)
+		(size 1.53 1.53)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "77c07a70-0bbf-454b-bda2-325322e07462")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0)
+		(size 1.53 1.53)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "5fc54775-cf44-4cbf-b588-8497bdc9cc09")
+	)
+)

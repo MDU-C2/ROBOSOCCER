@@ -1,0 +1,249 @@
+(footprint "WE-HCC_1210"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SMT High Current Cube Inductor, 2-Leads, body 12.1x11.4mm")
+	(property "Reference" "REF**"
+		(at 0 -6.65 0)
+		(layer "F.SilkS")
+		(uuid "6b89e666-995f-4598-b7aa-f4eec4b1eaf9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WE-HCC_1210"
+		(at 0 6.65 0)
+		(layer "F.Fab")
+		(uuid "7c80cb2b-20fe-4c83-8f81-f83697a924ea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "41bdcd2a-96af-4641-acda-222a2b217bae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "61e6ed45-0be1-42f9-95e2-3cf7cd8103fd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "833c4948-f9e9-4180-a004-0291597f6864")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -6.2 -5.85)
+		(end 6.2 -5.85)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "de5a13af-2c61-4a2d-b22e-592de4aef8a2")
+	)
+	(fp_line
+		(start -6.2 -3)
+		(end -6.2 -5.85)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9e8d88e1-a4a6-4e62-9705-02d8e7ba3283")
+	)
+	(fp_line
+		(start -6.2 5.85)
+		(end -6.2 3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ae6bae4f-5315-44fe-986e-2d29634bea80")
+	)
+	(fp_line
+		(start -6.2 5.85)
+		(end 6.2 5.85)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e062cdfa-8b65-4614-89b7-517403762ac1")
+	)
+	(fp_line
+		(start 6.2 -3)
+		(end 6.2 -5.85)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1222ab16-8302-4172-9fa8-31aa752f06ee")
+	)
+	(fp_line
+		(start 6.2 5.85)
+		(end 6.2 3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4f3c87c0-a302-4c41-933b-06874976ee51")
+	)
+	(fp_line
+		(start -6.6 -6.05)
+		(end 6.6 -6.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "c7206d97-2e9a-478f-8e50-ab93618ae622")
+	)
+	(fp_line
+		(start -6.6 6.05)
+		(end -6.6 -6.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "ac72a6c7-cb79-47d7-98dd-f292d19b7c11")
+	)
+	(fp_line
+		(start -6.6 6.05)
+		(end 6.6 6.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "e471d692-2d1e-4b9c-8b8b-ea6dc6fc48cd")
+	)
+	(fp_line
+		(start -6.05 -5.7)
+		(end 6.05 -5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "c47087d6-8e87-4bd1-b3c5-c8845f3b7aef")
+	)
+	(fp_line
+		(start -6.05 5.7)
+		(end -6.05 -5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "bd2e9b4f-103d-4cc4-bf19-1ac9f4ab1e3d")
+	)
+	(fp_line
+		(start -6.05 5.7)
+		(end 6.05 5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "e608e7a4-1b43-4dc7-a35e-ecc8aa83c5f3")
+	)
+	(fp_line
+		(start -0.5 0)
+		(end 0.5 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "7a9f9a5b-5e4e-4b7e-836d-59389d3205e6")
+	)
+	(fp_line
+		(start 0 0.5)
+		(end 0 -0.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "37b9af71-3b9d-4c0f-9882-e45cadd1e4c7")
+	)
+	(fp_line
+		(start 6.05 5.7)
+		(end 6.05 -5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "effa3cac-752e-493b-b030-ff1faf797334")
+	)
+	(fp_line
+		(start 6.6 6.05)
+		(end 6.6 -6.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Eco2.User")
+		(uuid "4dd80c05-4655-4b0d-9c9c-f1e99115010c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.15 -0.19691 0)
+		(unlocked yes)
+		(layer "Eco2.User")
+		(uuid "db7bf3e8-535e-4ed5-a242-b573ab4993e7")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -4.95 0)
+		(size 2.9 5.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "4af342a0-1527-4c37-9c7b-d9893fd73816")
+	)
+	(pad "2" smd rect
+		(at 4.95 0)
+		(size 2.9 5.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "02d5678e-741b-4139-b655-fc4053efe33d")
+	)
+)

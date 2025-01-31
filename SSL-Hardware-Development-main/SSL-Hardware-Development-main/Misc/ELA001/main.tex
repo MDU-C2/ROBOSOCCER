@@ -1,0 +1,193 @@
+\documentclass[a4paper,9pt]{article}
+\usepackage{geometry}
+\geometry{top=25mm, bottom=25mm, left=25mm, right=25mm}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\title{ELA001}
+\author{Examiner: }
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+
+% Define style for code blocks
+\lstset{
+    language=C,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    breaklines=true,
+    frame=single,
+    morekeywords={VL53L1_Init, VL53L1_GetDistance, VL53L1_GetRangeStatus, 
+                  VL53L1_SetMeasurementTimingBudget, VL53L1_SetRangingMode,
+                  VL53L1_SetInterruptThresholds, VL6180_Init, VL6180_GetProximity, 
+                  VL6180_GetAmbientLight, VL6180_GetRange, VL6180_SetInterruptConfig,
+                  APDS9960_Init, APDS9960_EnableGesture, APDS9960_GetGesture,
+                  APDS9960_EnableProximity, APDS9960_GetProximity, APDS9960_EnableAmbientLight,
+                  APDS9960_GetAmbientLight, APDS9960_GetColor, APDS9960_SetProximityInterruptThreshold,
+                  APDS9960_ClearInterrupt, Motor_Init, Motor_SetSpeed, Motor_GetSpeed, 
+                  Motor_SetDirection, Motor_GetDirection, Motor_ReadEncoder, Motor_Stop,
+                  BNO055_Init, BNO055_SetOperationMode, BNO055_GetEulerAngles,
+                  BNO055_GetAcceleration, BNO055_GetGyro, BNO055_GetMagnetometer,
+                  AS5600_Init, AS5600_GetRawAngle, AS5600_GetAngle, AS5600_SetZeroPosition}
+}
+
+\begin{document}
+
+\maketitle
+
+\section*{Course Information}
+\begin{itemize}[label=--]
+	\item \textbf{Course code:} ELA001
+	\item \textbf{Subject:} Electronics
+	\item \textbf{Credits:} 7.5
+	\item \textbf{Main field of study:} Electronics, depth G2F
+\end{itemize}
+
+% \section*{Objectives}
+% The objective of the course is to allow the student to use the knowledge acquired in electronics to conduct a larger project. The project should deepen the student's theoretical and practical knowledge.
+
+% \section*{Learning Outcomes}
+% Upon completion of the course, the student will be able to:
+% \begin{enumerate}
+% 	\item Conduct a larger project involving the various elements of the project.
+% 	\item Orally and in writing, demonstrate understanding of the elements involved.
+% 	\item Analyze the limitations of the proposed solution.
+% 	\item Present the project both orally and in writing in an informative and constructive manner.
+% \end{enumerate}
+
+\section*{Tasks for UdeA}
+The following tasks will be completed by University of Antioquia (UdeA):
+\begin{enumerate}
+	\item \textbf{Hardware Interface for Sensors:}
+	      \begin{itemize}
+		      \item Design and implement the hardware interface for collecting sensor data.
+
+		            The following are some example API calls the hardware interface should have:
+		            \begin{lstlisting}
+// VL53L1 Time-of-Flight Sensor
+VL53L1_Init();                             // Initialize the sensor
+VL53L1_GetDistance();                      // Get distance in mm
+VL53L1_GetRangeStatus();                   // Get range status
+VL53L1_SetRangingMode(uint8_t mode);       // Set ranging mode
+VL53L1_SetInterruptThresholds(uint16_t low, uint16_t high); // Set interrupt thresholds
+
+// VL6180 Proximity and Ambient Light Sensor
+VL6180_Init();                             // Initialize the sensor
+VL6180_GetProximity();                     // Get proximity value
+VL6180_GetRange();                         // Get range distance
+VL6180_SetInterruptConfig(uint8_t config); // Configure interrupt settings
+
+// APDS9960 Gesture and Color Sensor
+APDS9960_Init();                           // Initialize the sensor
+APDS9960_EnableProximity();                // Enable proximity sensing
+APDS9960_GetProximity();                   // Get proximity value
+APDS9960_GetColor();                       // Get RGBC color data
+APDS9960_SetProximityInterruptThreshold(uint8_t low, uint8_t high); // Set proximity interrupt
+APDS9960_ClearInterrupt();                 // Clear interrupts
+		            \end{lstlisting}
+
+		      \item \textbf{BNO055 Orientation Sensor:}
+		            \begin{itemize}
+			            \item Implement the interface for the BNO055 sensor to retrieve orientation, acceleration, and other motion-related data.
+
+			                  Example API calls for the BNO055 sensor interface:
+			                  \begin{lstlisting}
+// BNO055 Sensor Initialization
+BNO055_Init();                               // Initialize the BNO055 sensor
+
+// Sensor Configuration
+BNO055_SetOperationMode(uint8_t mode);       // Set the operation mode (e.g., IMU, NDOF)
+
+// Sensor Data Retrieval
+BNO055_GetQuaternionAngles(float *yaw, float *pitch, float *roll); // Get orientation data (Euler angles)
+BNO055_GetAcceleration(float *x, float *y, float *z);         // Get linear acceleration
+BNO055_GetGyro(float *gx, float *gy, float *gz);              // Get gyroscope data
+BNO055_GetMagnetometer(float *mx, float *my, float *mz);      // Get magnetometer data
+			                  \end{lstlisting}
+		            \end{itemize}
+
+		      \item \textbf{AS5600 Magnetic Encoder:}
+		            \begin{itemize}
+			            \item Implement the interface for the AS5600 magnetic encoder to retrieve angular position.
+
+			                  Example API calls for the AS5600 sensor interface:
+			                  \begin{lstlisting}
+// AS5600 Sensor Initialization
+AS5600_Init();                               // Initialize the AS5600 sensor
+
+// Get Raw Angle
+AS5600_GetRawAngle();                        // Get the raw angle from the sensor
+
+// Get Adjusted Angle
+AS5600_GetAngle();                           // Get the adjusted angle (taking zero-position into account)
+
+// Set Zero Position
+AS5600_SetZeroPosition();                    // Set the zero position for angle measurements
+			                  \end{lstlisting}
+		            \end{itemize}
+	      \end{itemize}
+
+	\item \textbf{Hardware Interface for Motors:}
+	      \begin{itemize}
+		      \item Develop the hardware interface to control the motors for a three-wheeled omni-directional drive system.
+		      \item Integrate the interface with the motor drivers.
+
+		            Example API calls for the motor control interface:
+		            \begin{lstlisting}
+// Motor Initialization
+Motor_Init();                               // Initialize the motor controller
+
+// Motor Control
+Motor_SetSpeed(uint8_t wheel_id, int speed); // Set the speed of a specific wheel
+Motor_GetSpeed(uint8_t wheel_id);            // Get the current speed of the wheel
+Motor_SetDirection(uint8_t wheel_id, int dir); // Set the direction (e.g., forward, reverse)
+Motor_GetDirection(uint8_t wheel_id);        // Get the current direction of the wheel
+
+// Encoder Readings
+Motor_ReadEncoder(uint8_t wheel_id);         // Read the encoder value for a specific wheel
+
+// Stop Motor
+Motor_Stop(uint8_t wheel_id);                // Stop the motor
+		            \end{lstlisting}
+	      \end{itemize}
+\end{enumerate}
+
+
+It is not necessary to implement all of these functions and you can change them as you see fit, but we want an interface for common use of each sensor (i.e. sample data, retrieve range values etc...).
+
+\section*{Embedded System Setup}
+Our system will run on an embedded platform using micro-ROS alongside FreeRTOS for real-time task management. micro-ROS will be used for communication and coordination between the different components, while FreeRTOS will handle task scheduling and prioritization. 
+
+\section*{Function Documentation Requirement}
+Each function implemented in the project must be properly documented using doxygen. The documentation should include the following:
+\begin{itemize}
+    \item A clear description of what the function does.
+    \item The parameters it accepts (data type and description).
+    \item The return values (if applicable) and what they represent.
+    \item Any special conditions or limitations for using the function.
+    \item Example usage, if necessary, to demonstrate how the function is called and utilized in the code.
+\end{itemize}
+
+% Proper documentation will ensure the code is easily understandable, maintainable, and can be reused effectively in the future. This is critical when working in a collaborative environment like this project.
+
+% \section*{Assessment}
+% \begin{itemize}[label=--]
+% 	\item Written and oral presentation of the project.
+% 	\item Analysis of the project solution’s strengths and limitations.
+% 	\item Contribution to the group project and collaboration with UdeA.
+% 	\item Adherence to proper documentation standards for each function.
+% \end{itemize}
+
+\end{document}
